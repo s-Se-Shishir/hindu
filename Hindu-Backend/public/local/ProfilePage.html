@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include ('includes/header-script.php') ?>
+
+    <style>
+
+        .profile-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+        }
+        .profile-sidebar {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 1px solid #eee;
+        }
+        .profile-main {
+            width: 70%;
+            padding-left: 20px;
+        }
+        .profile-picture {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .profile-title {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .profile-contact {
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+        }
+        .contact-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        .skill-item, .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        .skill-name, .job-title, .degree {
+            font-weight: bold;
+        }
+        .company, .school {
+            color: #555;
+        }
+        .date {
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+<header class="header">
+        <!-- nav -->
+        <?php include ('includes/header-all.php') ?>
+
+        <!-- nav -->
+
+        <div class="section-search-area section container container-palette"
+            style="padding-top: 220px; padding-bottom: 165px; position: relative; background: url(assets/img/bg-para)">
+            <!-- Background Video -->
+            <video autoplay muted loop class="bg-video">
+                <source src="assets/video/hindubusiness.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="container"">
+                <div class=" body">
+                <div class="h-area">
+                    <h1 class="title" style="font-family: Courgette, cursive; font-weight: 400; font-style: normal; ">
+                        Contact Us</h1>
+                    <style>
+                        .headwalahu1 {
+                                font-size: 3.6rem !important;
+                            }
+
+
+
+                        @media (max-width: 768px) {
+
+                            .title,
+                            .subtitle {
+                                font-size: 2.2rem !important;
+                            }
+                        }
+                    </style>
+                    <span class="subtitle"
+                        style="font-family: Sevillana, cursive; font-weight: 400; font-style: normal;  font-size:1.8rem;">"Get in Touch with Us Today!"
+                        </span>
+                </div>
+
+
+
+                <!-- main search start -->
+
+
+
+                <!-- main search  -->
+                <style>
+                    .effetwala-1:hover {
+                        background: rgba(255, 165, 0, 1) !important;
+                        color: #fff !important;
+                        border: 2px solid white !important;
+                        border-radius: 55px !important;
+                        transition: 0.8s ease-in-out !important;
+                    }
+
+                    .bg-video {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                </style>
+            </div>
+        </div>
+        </div>
+        <div style="width: 100%; height: 100px; margin-top: -99px; position: absolute; z-index:12332;"
+            data-image-src="assets/img/home-banner-mask.png"></div>
+    </header>
+
+
+
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-picture">
+            <h1 class="profile-name">John Doe</h1>
+            <p class="profile-title">Software Developer</p>
+            <div class="profile-contact">
+                <div class="contact-item">
+                    <p class="contact-label">Email:</p>
+                    <p>johndoe@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <p class="contact-label">Phone:</p>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <p class="contact-label">Location:</p>
+                    <p>New York, NY</p>
+                </div>
+                <div class="contact-item">
+                    <p class="contact-label">Website:</p>
+                    <p>www.johndoe.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-main">
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <p>Experienced software developer with a passion for creating efficient and user-friendly web applications. Skilled in front-end and back-end technologies with a focus on JavaScript ecosystems.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-item">
+                    <p class="skill-name">Front-end:</p>
+                    <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Back-end:</p>
+                    <p>Node.js, Express, Python, Django</p>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-name">Database:</p>
+                    <p>MongoDB, MySQL, PostgreSQL</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <p class="job-title">Senior Software Developer</p>
+                    <p class="company">Tech Innovations Inc.</p>
+                    <p class="date">January 2020 - Present</p>
+                    <ul>
+                        <li>Lead development of company's flagship web application</li>
+                        <li>Mentor junior developers and conduct code reviews</li>
+                        <li>Implement best practices for scalable and maintainable code</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <p class="job-title">Software Developer</p>
+                    <p class="company">WebSolutions Co.</p>
+                    <p class="date">June 2017 - December 2019</p>
+                    <ul>
+                        <li>Developed and maintained multiple client websites</li>
+                        <li>Collaborated with design team to implement responsive layouts</li>
+                        <li>Optimized website performance and SEO</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <p class="degree">Bachelor of Science in Computer Science</p>
+                    <p class="school">University of Technology</p>
+                    <p class="date">2013 - 2017</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

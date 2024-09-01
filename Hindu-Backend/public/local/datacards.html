@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <?php include ('includes/header-script.php') ?>
+
+
+</head>
+
+<body class="">
+
+
+    <header class="header">
+        <!-- nav -->
+        <?php include('includes/header-all.php')?>
+
+        <!-- nav -->
+
+        <div class="section-search-area section container container-palette"
+            style="padding-top: 220px; padding-bottom: 165px; position: relative; background: url(assets/img/bg-para)">
+            <!-- Background Video -->
+            <video autoplay muted loop class="bg-video">
+                <source src="assets/video/hindubusinessH.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <div class="container"">
+                <div class="body">
+                    <div class="h-area">
+                        <h1 class="title"
+                            style="font-family: Courgette, cursive; font-weight: 400; font-style: normal; ">
+                            Boost Your Business in the Hindu Community</h1>
+                        <style>
+                            .headwalahu1 {
+                                font-size: 3.6rem !important;
+                            }
+
+                        
+
+                            @media (max-width: 768px) {
+
+                                .title , .subtitle {
+                                    font-size: 2.2rem !important;
+                                }
+                            }
+                        </style>
+                        <span class="subtitle"
+                            style="font-family: Sevillana, cursive; font-weight: 400; font-style: normal;   font-size:1.8rem;">   Boost your business in the Hindu community with our directory that merges cultural heritage with quality.</span>
+                    </div>
+
+
+
+                    <!-- main search start -->
+
+
+
+                    <!-- main search  -->
+                    <style>
+                        .effetwala-1:hover {
+                            background: rgba(255, 165, 0, 1) !important;
+                            color: #fff !important;
+                            border-radius: 55px !important;
+                            transition: 0.8s ease-in-out !important;
+                        }
+
+                        .bg-video {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: -1;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 100px; margin-top: -99px; position: absolute;"
+            data-image-src="assets/img/home-banner-mask.png"></div>
+    </header>
+
+
+
+    <!-- post hero -->
+
+    <main class="slim-sections">
+        <div class="widget-search container container-palette">
+            <div class="filters filters-box boxed-wide">
+                <div class="container" style="display:flex; justify-content:center;" >
+                    
+
+                <!-- form start -->
+
+                
+                <div class="search-barx" style="width:60%; display:flex; justify-content:center;">
+                        <!-- Dropdown start -->
+                        <div class="dropdownx">
+                            <div id="drop-text" class="dropdownx-text">
+                                <span id="span">Your States</span>
+                                <i id="icon" class="fa fa-caret-down" aria-hidden="true"></i>
+
+
+                            </div>
+
+                        </div>
+
+                        <!-- Search box input start -->
+                        <div class="search-boxx">
+                            <input type="text" id="search-input" placeholder="Place" />
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <!-- Search box input ends -->
+                    </div>
+
+
+                <!-- form end -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+
+
+
+    </main>
+
+  
+
+<!-- Custom Container Start -->
+<div class="custom-container">
+    <div class="custom-cards" id="custom-cards">
+    </div>
+    <div class="custom-details" id="custom-details">
+        <div class="custom-details-content" id="custom-details-content" style="margin-top:50px">
+        </div>
+    </div>
+</div>
+
+<script>
+const cardData = [
+    {
+        id: 1,
+        title: "Shishir Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 2,
+        title: "sandeep Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 3,
+        title: "kunal Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 4,
+        title: "suraj Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 5,
+        title: "Korchma Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 6,
+        title: "Korchma Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 7,
+        title: "Korchma Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 8,
+        title: "Korchma Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    },
+    {
+        id: 9,
+        title: "Korchma Taras Bulba",
+        rating: "3.0",
+        type: "Restaurant",
+        location: "Kyiv, Ukraine",
+        image: "assets/img/pic/real_estate/modern-bed-room-interior-m.jpg"
+    }
+    // Add more card data objects as needed
+];
+
+
+
+function renderCards() {
+    const cardsContainer = document.getElementById('custom-cards');
+    cardsContainer.innerHTML = cardData.map(card => `
+        <div class="custom-card" onclick="toggleDetails(this)" data-id="${card.id}">
+            <div class="thumbnail thumbnail-property">
+                <div class="thumbnail-image">
+                    <img src="${card.image}" alt="${card.title}" />
+                    <div class="icons">
+                        <a href="#"><i class="ion-android-share-alt"></i></a>
+                        <a href="#" class="add_to_favorites"><i class="ion-android-favorite"></i></a>
+                        <a href="#"><i class="ion-location"></i></a>
+                        <a href="#"><i class="ion-forward"></i></a>
+                    </div>
+                </div>
+                <div class="caption">
+                    <div class="caption-ls">
+                        <h3 class="thumbnail-title"><a href="#">${card.title}</a></h3>
+                        <span class="thumbnail-ratings">${card.rating} <i class="icon-star-ratings-3"></i></span>
+                        <span class="type"><a href="#">${card.type}</a></span>
+                    </div>
+                    <div class="caption-rs">
+                        <a href="#" class="btn-marker">
+                            <span class="box"><i class="fa fa-map-marker"></i></span>
+                            <span class="title">Location</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+renderCards();
+
+let expandedCard = null;
+
+function toggleDetails(cardElement) {
+    const cards = document.getElementById('custom-cards');
+    const details = document.getElementById('custom-details');
+    const detailsContent = document.getElementById('custom-details-content');
+    const cardId = cardElement.getAttribute('data-id');
+    const detail = cardData.find(card => card.id == cardId);
+
+    if (expandedCard === cardElement) {
+        cards.style.width = "100%";
+        details.style.width = "0";
+        detailsContent.style.opacity = 0;
+        expandedCard = null;
+    } else {
+        const viewportWidth = window.innerWidth;
+
+if (viewportWidth <= 768) { // Mobile view
+    cards.style.width = "10%";
+    details.style.width = "90%";
+} else if (viewportWidth <= 1024) { // Tablet view
+    cards.style.width = "20%";
+    details.style.width = "70%";
+} else { // PC view
+    cards.style.width = "60%";
+    details.style.width = "40%";
+}
+
+detailsContent.style.opacity = 1;
+
+        // Load the data into the details panel
+        detailsContent.innerHTML = `
+        <div>     
+            <button id="closeButton" style="position: absolute; top: 10px; right: 10px; background-color: orange; border: none; font-size: 24px; cursor: pointer; padding: 5px 15px; border-radius: 10px; color: white;">Close</button>
+        </div>
+        <div style="position: relative; width: 100%; margin: 0 auto; background-color: #fff; padding: 10px; border-radius: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <img src="${detail.image}" alt="${detail.title}" style="width: 48%; height: auto;" />
+                <div style="width: 48%; height: auto; background-color: #f0f0f0;">
+                    <!-- Embed your map here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1753.5112025742849!2d77.30476683884412!3d28.47887189393728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce73c4fa4ebdd%3A0x4b5b9a887271b23!2sSarai%20Khawaja%20Village%2C%20Sector%2036%2C%20Faridabad%2C%20Haryana%20121003!5e0!3m2!1sen!2sin!4v1723386564291!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <h2 style="font-size: 24px; margin-bottom: 10px;">${detail.title}</h2>
+            <p style="font-size: 16px; margin: 5px 0;">Type: ${detail.type}</p>
+            <div style="display: flex; justify-content: space-between;">
+                <p style="font-size: 16px; margin: 5px 0;">Rating: ${detail.rating}</p>
+                <p style="font-size: 16px; margin: 5px 0;">Location: ${detail.location}</p>
+            </div>
+        </div>
+        `;
+
+        // Add event listener after the button is added to the DOM
+        document.getElementById('closeButton').addEventListener('click', closeDetails);
+
+        expandedCard = cardElement;
+    }
+}
+
+function closeDetails() {
+    const cards = document.getElementById('custom-cards');
+    const details = document.getElementById('custom-details');
+    const detailsContent = document.getElementById('custom-details-content');
+
+    cards.style.width = "100%";
+    details.style.width = "0";
+    detailsContent.style.opacity = 0;
+    expandedCard = null;
+}
+
+</script>
+
+
+
+
+
+<style>
+.custom-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    overflow-x: auto;
+    transition: width 0.3s ease;
+    background-color: #f3f3f3;
+}
+
+.custom-card {
+    flex: 0 0 30%; 
+    box-sizing: border-box;
+    /* padding: 20px; */
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, flex 0.3s ease;
+    margin-bottom: 20px; 
+    border: 2px solid #f3f3f3;
+    border-radius: 20px;
+
+}
+
+.custom-details {
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    position: sticky;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+
+.thumbnail.thumbnail-property .caption .caption-ls {
+    text-align: left;
+}
+
+
+ .custom-details-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.custom-map {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caption-ls {
+    margin-bottom: 10px;
+}
+
+.thumbnail-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.thumbnail-ratings, .type, .title {
+    font-size: 14px;
+}
+
+.caption-rs {
+    text-align: center;
+}
+
+.btn-marker {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.box {
+    margin-right: 5px;
+}
+
+.thumbnail.thumbnail-property {
+    border: 1px solid #fff;
+    padding: 10px;
+} 
+
+@media (max-width: 768px) {
+    .custom-card {
+        flex: 0 0 48%; 
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .custom-card {
+        flex: 0 0 100%; 
+    }
+
+ 
+}
+</style>
+
+
+
+
+
+
+
+
+
+    <?php include ('includes/footer.php') ?>
+
+    <!-- footer end -->
+
+
+    <!-- script start -->
+    <?php include ('includes/footer-script.php') ?>
+
+
+</body>
+
+</html>

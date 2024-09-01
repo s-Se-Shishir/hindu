@@ -1,0 +1,129 @@
+.font-wala1a{
+    font-family: Jost;
+  font-weight: 600;
+  font-style: normal;
+  font-size:2.4rem;      
+   color: #f48534 !important;
+    font-weight: 700;
+}
+
+
+.effetwala-1{
+    background: #FF8225  !important;
+    color: #fff !important ;
+    border: 2px solid white !important;
+    border-radius: 55px  !important;
+    transition: 0.8s ease-in-out  !important;
+    font-size:1.8rem !important;
+}
+.effetwala-1:hover {
+    background: rgba(255, 165, 0, 0.1)  !important;
+    color: linear-gradient(90deg, #07a1e3 0%, #07b1d3 100%) !important ;
+    border: 2px solid #FF8225  !important;
+    border-radius: 55px  !important;
+    transition: 0.8s ease-in-out  !important;
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+.search-barx {
+    display: flex;
+    align-items: center;
+    border-radius: 70px;
+    background-color: #fff;
+  }
+  
+  .dropdownx {
+    position: relative;
+    width: 250px;
+    border-radius: 50px;
+    background-color: #f48534;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px 0px;
+    cursor: pointer;
+    z-index: 123;
+  }
+  
+  .dropdownx-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    color: #fff;
+  }
+  
+  .dropdownx-list {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    transition: max-height 0.5s;
+
+  }
+
+  .dropdownx-list li{
+    color: #9d4a0e !important;
+
+  }
+  
+  .dropdownx-list-item {
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 1rem 0 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.3s ease, margin-left 0.2s ease;
+
+  }
+  
+  .dropdownx-list-item:hover {
+    margin-left: 0.5rem;
+    color: #f48534;
+  }
+  
+  #list.show {
+    max-height: 300px;
+  }
+  
+  .search-boxx {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    width: 100%;
+    color: #f48534;
+  }
+  
+  .search-boxx input {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f48534;
+    border: 0;
+    outline: 0;
+  }
+  
+  .search-boxx i {
+    font-size: 2.4rem;
+    cursor: pointer;
+  }
+  
+  .search-boxx input::placeholder {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #f48534;
+  }
+  

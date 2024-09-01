@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include('include/head.php'); ?>
+
+<body>
+    <div class="page-wrapper">
+        <!-- START mainbar -->
+        <div class="sidebar">
+            <div class="bar-head">
+                <div class="logo"><a href="#" class="link">Hindu Business Directory</a> <a href="#" class="link-mobile">L</a></div>
+            </div>
+            <?php include('include/side-bar.php'); ?>
+        </div>
+        <!-- /.sidebar -->
+        <!-- END mainbar -->
+        <!-- START mainbar -->
+        <div class="mainbar">
+            <?php include('include/header.php'); ?>
+            <!-- /.top-bar -->
+            <div class="mainbar-body">
+                <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; max-width: 900px;">
+
+                    <div onclick="handleClick('Total Listings')" style="width: 140px; height: 140px; border-radius: 50%; margin: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #42a5f5; color: white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); cursor: pointer; transition: transform 0.3s, background-color 0.3s;">
+                        <div style="font-size: 28px; font-weight: bold;">120</div>
+                        <div style="font-size: 14px;">Total Listings</div>
+                    </div>
+
+                    <div onclick="handleClick('Total Reviews')" style="width: 140px; height: 140px; border-radius: 50%; margin: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #66bb6a; color: white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); cursor: pointer; transition: transform 0.3s, background-color 0.3s;">
+                        <div style="font-size: 28px; font-weight: bold;">54</div>
+                        <div style="font-size: 14px;">Total Reviews</div>
+                    </div>
+
+                    <div onclick="handleClick('Total Ratings')" style="width: 140px; height: 140px; border-radius: 50%; margin: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #ffa726; color: white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); cursor: pointer; transition: transform 0.3s, background-color 0.3s;">
+                        <div style="font-size: 28px; font-weight: bold;">4.5</div>
+                        <div style="font-size: 14px;">Total Ratings</div>
+                    </div>
+
+                    <div onclick="handleClick('Inactive Listings')" style="width: 140px; height: 140px; border-radius: 50%; margin: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #ef5350; color: white; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); cursor: pointer; transition: transform 0.3s, background-color 0.3s;">
+                        <div style="font-size: 28px; font-weight: bold;">7</div>
+                        <div style="font-size: 14px;">Inactive Listings</div>
+                    </div>
+
+                </div>
+                <div class="listing-management">
+                    <div class="container">
+                        <h1 class="listing-title">Listing Management</h1>
+                        <div class="top-bar">
+                            <input type="text" id="search-bar" class="search-bar" placeholder="Search listings...">
+                            <button class="download-btn" onclick="downloadCSV('listing-table')">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                        <div class="table-container">
+                            <table class="listing-table" id="listing-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Address</th>
+                                        <th>Category</th>
+                                        <th>State</th>
+                                        <th>Date</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Sample Data Row -->
+                                    <!-- Add more rows as needed -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Example Company</td>
+                                        <td>1234 Elm Street</td>
+                                        <td>Category A</td>
+                                        <td>california</td>
+                                        <td>12/4/2024</td>
+                                        <td>
+                                            <button onclick="editRow(this)"><i class="fas fa-edit"></i></button>
+                                            <button onclick="deleteRow(this)"><i class="fas fa-trash-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pagination-controls" id="pagination-controls">
+                            <!-- Pagination buttons will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="management-section">
+                    <div class="container">
+                        <div class="management-content">
+                            <div class="tables-container">
+                                <!-- Review Management Section -->
+                                <div class="section review-management">
+                                    <h2>Review Management</h2>
+                                    <div class="top-bar">
+                                        <input type="text" id="search-bar" class="search-bar" placeholder="Search listings...">
+                                        <button class="download-btn" onclick="downloadCSV('listing-table')">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="table-container">
+                                        <table class="review-table" id="review-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Review</th>
+                                                    <th>Date</th>
+                                                    <th>Category</th>
+                                                    <th>State</th>
+                                                    <th>Company Name</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Sample Data Row -->
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>John Doe</td>
+                                                    <td>Excellent service!</td>
+                                                    <td>2024-08-15</td>
+                                                    <td>Electronics</td>
+                                                    <td>California</td>
+                                                    <td>ABC Corp</td>
+                                                    <td>
+                                                        <button class="edit-btn" onclick="editRow(this)">
+                                                            <i class="fas fa-edit"></i>
+                                                        </button>
+                                                        <button class="delete-btn" onclick="deleteRow(this)">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- More rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Rating Management Section -->
+                                <div class="section rating-management">
+                                    <h2>Rating Management</h2>
+                                    <div class="top-bar">
+                                        <input type="text" id="search-bar" class="search-bar" placeholder="Search listings...">
+                                        <button class="download-btn" onclick="downloadCSV('listing-table')">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                    <div class="table-container">
+                                        <table class="rating-table" id="rating-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Rating</th>
+                                                    <th>Date</th>
+                                                    <th>Category</th>
+                                                    <th>State</th>
+                                                    <th>Company Name</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Sample Data Row -->
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Jane Smith</td>
+                                                    <td>5</td>
+                                                    <td>2024-08-15</td>
+                                                    <td>Software</td>
+                                                    <td>New York</td>
+                                                    <td>XYZ Ltd</td>
+                                                    <td>
+                                                        <button class="edit-btn" onclick="editRow(this)">
+                                                            <i class="fas fa-edit"></i>
+                                                        </button>
+                                                        <button class="delete-btn" onclick="deleteRow(this)">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- More rows as needed -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- END mainbar -->
+    </div>
+    <?php include('include/footer.php'); ?>
+</body>
+
+</html>

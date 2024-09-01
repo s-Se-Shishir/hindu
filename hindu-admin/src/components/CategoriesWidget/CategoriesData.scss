@@ -1,0 +1,63 @@
+.widgetsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between the widgets */
+    justify-content: center; /* Center the widgets horizontally */
+    padding: 20px; /* Optional: Add some padding around the container */
+  }
+  
+  .widget {
+    flex: 1 1 calc(25% - 40px); /* Adjust the percentage based on how many widgets you want per row */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .widget {
+      flex: 1 1 calc(33.333% - 40px); /* 3 widgets per row */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .widget {
+      flex: 1 1 calc(50% - 40px); /* 2 widgets per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .widget {
+      flex: 1 1 100%; /* 1 widget per row */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start;
+    }
+  
+    .widget .right {
+      margin-top: 10px; /* Add space between left and right sections */
+      align-items: flex-start;
+    }
+    
+    .icon {
+      font-size: 24px; /* Adjust icon size for smaller screens */
+    }
+  
+    .title {
+      font-size: 16px; /* Adjust title size for smaller screens */
+    }
+  
+    .counter {
+      font-size: 20px; /* Adjust counter size for smaller screens */
+    }
+  
+    .percentage {
+      font-size: 16px; /* Adjust percentage size for smaller screens */
+    }
+  }
+  
